@@ -168,6 +168,10 @@ body {
     padding-bottom: 12px;
   }
 
+  .STBlock {
+    padding-bottom: 20px;
+  }
+
   .Footer {
     position: fixed;
     bottom: 0;
@@ -208,7 +212,7 @@ body {
   .STBlock {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
   }
 
   .ST1 img {
