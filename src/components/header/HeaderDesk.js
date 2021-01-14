@@ -6,6 +6,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
+import { Link } from "react-router-dom";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HeaderDesk() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -57,19 +58,50 @@ export default function HeaderDesk() {
 
   return (
     <div className={classes.root} className="Header">
-      <u>
-        <h2>Jack L. Townsend, Sr.</h2>
-      </u>
-      <h3>Mediation - Arbitration - Consulting Services</h3>
+      <Link to="/" style={{ color: "#FFF" }} onClick={handleChange}>
+        <u>
+          <h2>Jack L. Townsend, Sr.</h2>
+        </u>
+        <h3>Mediation - Arbitration - Consulting Services</h3>
+      </Link>
       <AppBar position="static" color="transparent">
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="simple tabs example"
+          centered
         >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab
+            label="Services"
+            {...a11yProps(0)}
+            to="/Services"
+            component={Link}
+            style={{ color: "#FFF" }}
+          />
+
+          <Tab
+            label="Team"
+            {...a11yProps(1)}
+            to="/Team"
+            component={Link}
+            style={{ color: "#FFF" }}
+          />
+
+          <Tab
+            label="Calender"
+            {...a11yProps(2)}
+            to="/Calender"
+            component={Link}
+            style={{ color: "#FFF" }}
+          />
+
+          <Tab
+            label="Contact"
+            {...a11yProps(3)}
+            to="/Contact"
+            component={Link}
+            style={{ color: "#FFF" }}
+          />
         </Tabs>
       </AppBar>
     </div>
