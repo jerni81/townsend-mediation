@@ -1,24 +1,218 @@
+html,
+body {
+  height: 100%;
+  letter-spacing: 0.05rem;
+}
+
 .App {
   text-align: center;
-  background-color: silver;
-  height: 100vh;
+  height: 100%;
 }
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+/* Header CSS */
 
 .Header {
-  margin-top: 0mm;
-  background-image: url("carbon-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 19vh;
+  width: 100%;
+  background-image: url("bg-images/carbon-background.jpg");
   color: white;
 }
 
-.Header h2 {
-  margin-top: 0mm;
+.Header h1 {
+  font-family: "Cinzel", serif;
+  margin: 3px;
 }
+
+.Header span {
+  margin: 3px;
+}
+
+.Tabs {
+  margin-bottom: 0;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 19vh;
+  overflow: auto;
+  height: 76vh;
+}
+
+/* Home page CSS */
+
+.Home {
+  width: 100%;
+  background-image: url("bg-images/puzzle-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Bio {
+  height: 100vh;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 48%;
+  text-align: left;
+}
+
+.Bio h3 {
+  margin: 10px;
+}
+
+.Bio2 {
+  display: flex;
+  margin-top: 20px;
+}
+
+.Bio2 img {
+  width: max-content;
+  height: max-content;
+  margin: 15px;
+  border: solid white 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Services and Team pages CSS */
+
+.ServicesTeam {
+  text-align: left;
+  width: 100%;
+  background-image: url("bg-images/handshake-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.STBlock {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ST1 {
+  margin: 10px;
+}
+
+.ST1 img {
+  width: max-content;
+  height: max-content;
+  border: solid white 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.ST2 {
+  margin: 10px;
+}
+
+/* Footer CSS */
 
 .Footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-image: url("carbon-background.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("bg-images/carbon-background.jpg");
   color: white;
+  height: 5vh;
+  position: static;
+}
+
+/* Medium size Screens */
+
+@media only screen and (max-width: 850px) {
+  body {
+    overflow: scroll;
+  }
+
+  .Header {
+    height: fit-content;
+    position: relative;
+  }
+
+  .Main {
+    margin-top: 0px;
+    height: fit-content;
+  }
+
+  .Bio {
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+
+  .Bio h3 {
+    margin-top: 5px;
+  }
+
+  .Bio2 {
+    margin-bottom: 10px;
+    padding-bottom: 12px;
+  }
+
+  .Footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+/* Small screens */
+
+@media only screen and (max-width: 771px) {
+  .Home {
+    align-items: center;
+  }
+
+  .Bio {
+    width: 100vw;
+    margin: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .Bio2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .Bio2 img {
+    width: 220px;
+    margin-bottom: 30px;
+  }
+
+  .Bio h3 {
+    margin-top: 20px;
+  }
+
+  .STBlock {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  .ST1 img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
 }

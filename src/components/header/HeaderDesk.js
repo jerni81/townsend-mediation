@@ -60,9 +60,9 @@ export default function HeaderDesk() {
     <div className={classes.root} className="Header">
       <Link to="/" style={{ color: "#FFF" }} onClick={handleChange}>
         <u>
-          <h2>Jack L. Townsend, Sr.</h2>
+          <h1>Jack L. Townsend, Sr.</h1>
         </u>
-        <h3>Mediation - Arbitration - Consulting Services</h3>
+        <span>Mediation - Arbitration - Consulting Services</span>
       </Link>
       <AppBar position="static" color="transparent">
         <Tabs
@@ -80,7 +80,7 @@ export default function HeaderDesk() {
           />
 
           <Tab
-            label="Team"
+            label="Our Team"
             {...a11yProps(1)}
             to="/Team"
             component={Link}

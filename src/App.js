@@ -13,7 +13,7 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 function App() {
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery("(min-width: 771px)");
   return (
     <div className="App">
       {matches ? <HeaderDesk /> : <HeaderMobile />}
