@@ -48,24 +48,11 @@ body {
   margin-top: 19vh;
   overflow: auto;
   height: 76vh;
-  text-align: left;
-  width: 100%;
-  background-image: url("bg-images/handshake-bg.jpg");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
 }
 
 /* Home page CSS */
 
 .Home {
-  display: flex;
-  flex-direction: column;
-  margin-top: 19vh;
-  overflow: auto;
-  height: 76vh;
   width: 100%;
   background-image: url("bg-images/puzzle-bg.jpg");
   background-position: center;
@@ -103,6 +90,16 @@ body {
 
 /* Services and Team pages CSS */
 
+.ServicesTeam {
+  text-align: left;
+  width: 100%;
+  background-image: url("bg-images/handshake-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
 .STBlock {
   width: 100%;
   max-width: 800px;
@@ -126,20 +123,6 @@ body {
 .ST2 {
   margin-right: 10px;
   margin-left: 10px;
-}
-
-/* Contact CSS */
-
-.ContactBlock {
-  text-align: center;
-}
-
-.ContactBlock img {
-  width: max-content;
-  height: max-content;
-  margin: 15px;
-  border: solid white 2px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Footer CSS */

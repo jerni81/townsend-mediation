@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="Home Main">
       <div className="Bio">
         <h3>
           Jack L. Townsend, Sr. has been providing outstanding services for
