@@ -125,6 +125,12 @@ body {
   margin-left: 10px;
 }
 
+/* Contact CSS */
+
+.ContactBlock {
+  width: 100%;
+}
+
 /* Footer CSS */
 
 .Footer {
@@ -201,7 +207,6 @@ body {
   }
 
   .Bio2 img {
-    width: 220px;
     margin-bottom: 30px;
   }
 
@@ -220,5 +225,14 @@ body {
     height: 200px;
     margin: auto;
     display: block;
+  }
+
+  .ContactBlock {
+    text-align: center;
+  }
+
+  #OfficeImg {
+    max-width: 100%;
+    height: auto;
   }
 }

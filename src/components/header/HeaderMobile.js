@@ -44,7 +44,7 @@ function HeaderMobile() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Services", "Team", "Calender", "Contact Us"].map((text, index) => (
+        {["Services", "Team", "Calender", "Contact"].map((text, index) => (
           <ListItem button key={text}>
             <Link to={`/${text}`}>
               <ListItemText primary={text} />
