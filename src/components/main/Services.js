@@ -3,7 +3,7 @@ import MiniContact from "./MiniContact";
 
 function Services() {
   return (
-    <div className="ServicesTeam Main">
+    <div className="Main">
       <div className="STBlock">
         <div className="ST1">
           <h3>Services</h3>
@@ -36,6 +36,8 @@ function Services() {
           </ul>
         </div>
         <div className="ST2">
+          <h3>Contact Us Today</h3>
+          <hr />
           <MiniContact />
         </div>
       </div>

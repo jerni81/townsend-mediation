@@ -4,7 +4,7 @@ import MiniContact from "./MiniContact";
 
 function Team() {
   return (
-    <div className="ServicesTeam Main">
+    <div className="Main">
       <div className="STBlock">
         <div className="ST1">
           <h3>Our Team</h3>
@@ -49,7 +49,7 @@ function Team() {
             <li>JESUIT HIGH SCHOOL SUPPORTER AND VOLUNTEER</li>
             <li>FIFTH GENERATION FLORIDIAN</li>
           </ul>
-            <br clear="left" />
+          <br clear="left" />
           <h3>Helen Townsend</h3>
           <p></p>
           <ul>
@@ -70,7 +70,7 @@ function Team() {
             </li>
             <li>University of Florida, BS, Journalism </li>
           </ul>
-            <br clear="left" />
+          <br clear="left" />
 
           <h3>Julie Riggs</h3>
           <p></p>
@@ -85,6 +85,8 @@ function Team() {
           </ul>
         </div>
         <div className="ST2">
+          <h3>Contact Us Today</h3>
+          <hr />
           <MiniContact />
         </div>
       </div>
