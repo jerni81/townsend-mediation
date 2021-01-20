@@ -4,7 +4,7 @@ import Office from "../main/images/JLT-offices.jpg";
 
 function Contact() {
   return (
-    <div className="Main ServicesTeam">
+    <div className="Main ServicesTeam Contact">
       <h3>Contact</h3>
       <hr style={{ width: "100%" }} />
       <div className="ContactBlock">

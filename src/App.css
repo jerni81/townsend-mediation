@@ -127,6 +127,10 @@ body {
 
 /* Contact CSS */
 
+.Contact {
+  text-align: center;
+}
+
 .ContactBlock {
   width: 100%;
 }
@@ -214,6 +218,10 @@ body {
     margin-top: 20px;
   }
 
+  .ServicesTeam {
+    background-attachment: fixed;
+  }
+
   .STBlock {
     flex-direction: column;
     align-items: center;
@@ -234,5 +242,9 @@ body {
   #OfficeImg {
     max-width: 100%;
     height: auto;
+  }
+
+  .Footer {
+    position: relative;
   }
 }

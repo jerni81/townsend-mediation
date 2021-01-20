@@ -85,6 +85,8 @@ function Team() {
           </ul>
         </div>
         <div className="ST2">
+          <h3>Contact</h3>
+          <hr/>
           <MiniContact />
         </div>
       </div>
