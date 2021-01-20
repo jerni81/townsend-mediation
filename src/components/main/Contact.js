@@ -11,9 +11,9 @@ function Contact() {
         <div>
           <h3>The Offices of Jack L. Townsend, Sr.</h3>
           <MiniContact />
-          <p></p>
+          </div>
           <img src={Office} alt="Our Offices" title="Our Offices" id="OfficeImg"/>
-        </div>
+        
       </div>
     </div>
   );

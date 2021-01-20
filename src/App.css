@@ -130,10 +130,18 @@ body {
 
 .Contact {
   text-align: center;
+  background-image: unset;
 }
 
 .ContactBlock {
   width: 100%;
+  height: 100vh;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 /* Footer CSS */
@@ -181,6 +189,16 @@ body {
 
   .STBlock {
     padding-bottom: 20px;
+  }
+
+  .ContactBlock {
+    padding: 10px;
+    height: auto;
+  }
+
+  #OfficeImg {
+    width: auto;
+    height: auto;
   }
 
   .Footer {
@@ -235,12 +253,14 @@ body {
   }
 
   .ContactBlock {
+    flex-direction: column;
     text-align: center;
   }
 
   #OfficeImg {
     max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
   }
 
   .Footer {
