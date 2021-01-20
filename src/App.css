@@ -81,9 +81,10 @@ body {
 }
 
 .Bio2 img {
-  width: max-content;
-  height: max-content;
+  width: 175px;
+  height: auto;
   margin: 15px;
+  margin-right: 20px;
   border: solid white 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -114,8 +115,8 @@ body {
 }
 
 .ST1 img {
-  width: max-content;
-  height: max-content;
+  width: 175px;
+  height: auto;
   border: solid white 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
@@ -219,7 +220,7 @@ body {
   }
 
   .ServicesTeam {
-    background-attachment: fixed;
+   background-image: unset;
   }
 
   .STBlock {
@@ -229,8 +230,6 @@ body {
   }
 
   .ST1 img {
-    width: 200px;
-    height: 200px;
     margin: auto;
     display: block;
   }
