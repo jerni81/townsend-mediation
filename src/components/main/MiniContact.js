@@ -8,7 +8,7 @@ function MiniContact() {
         <p>
           <b>Local:</b> <a href="tel:8139147363">(813) 914-7363</a>
           <br />
-          <b>Toll Free:</b>
+          <b>Toll Free: </b>
           <a href="tel:8886967363">(888) 696-7363</a>
           <br />
           <b>Fax:</b> (813) 914-7367

@@ -69,7 +69,9 @@ function HeaderMobile() {
         <u>
           <h2>Jack L. Townsend, Sr.</h2>
         </u>
-        <h3>Mediation - Arbitration - Consulting Services</h3>
+        <h3>
+          Mediation - Arbitration <br /> Consulting Services
+        </h3>
       </Link>
       {["top"].map((anchor) => (
         <React.Fragment key={anchor}>
@@ -78,7 +80,15 @@ function HeaderMobile() {
             color="inherit"
             id="button"
           >
-            Menu
+            <span
+              style={{
+                color: "#FFF",
+                fontFamily: "Lato , sans-serif",
+                fontWeight: "bold",
+              }}
+            >
+              <u>Menu</u>
+            </span>
           </Button>
           <Drawer
             anchor={anchor}

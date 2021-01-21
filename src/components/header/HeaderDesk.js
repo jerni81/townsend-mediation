@@ -58,11 +58,18 @@ export default function HeaderDesk() {
 
   return (
     <div className={classes.root} className="Header">
-      <Link to="/" style={{ color: "#FFF" }} onClick={handleChange}>
+      <Link
+        to="/"
+        style={{ color: "#FFF", textDecoration: "none" }}
+        onClick={handleChange}
+      >
         <u>
           <h1>Jack L. Townsend, Sr.</h1>
         </u>
-        <span>Mediation - Arbitration - Consulting Services</span>
+        <h3>
+          <span>Mediation</span>-<span>Arbitration</span>-
+          <span>Consulting Services</span>
+        </h3>
       </Link>
       <AppBar position="sticky" color="transparent">
         <Tabs
@@ -76,7 +83,11 @@ export default function HeaderDesk() {
             {...a11yProps(0)}
             to="/Services"
             component={Link}
-            style={{ color: "#FFF" }}
+            style={{
+              color: "#FFF",
+              fontFamily: "Lato , sans-serif",
+              fontWeight: "bold",
+            }}
           />
 
           <Tab
@@ -84,7 +95,11 @@ export default function HeaderDesk() {
             {...a11yProps(1)}
             to="/Team"
             component={Link}
-            style={{ color: "#FFF" }}
+            style={{
+              color: "#FFF",
+              fontFamily: "Lato , sans-serif",
+              fontWeight: "bold",
+            }}
           />
 
           <Tab
@@ -92,7 +107,11 @@ export default function HeaderDesk() {
             {...a11yProps(2)}
             to="/Calender"
             component={Link}
-            style={{ color: "#FFF" }}
+            style={{
+              color: "#FFF",
+              fontFamily: "Lato , sans-serif",
+              fontWeight: "bold",
+            }}
           />
 
           <Tab
@@ -100,7 +119,11 @@ export default function HeaderDesk() {
             {...a11yProps(3)}
             to="/Contact"
             component={Link}
-            style={{ color: "#FFF" }}
+            style={{
+              color: "#FFF",
+              fontFamily: "Lato , sans-serif",
+              fontWeight: "bold",
+            }}
           />
         </Tabs>
       </AppBar>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import JackHeadshot from "../main/images/jack-headshot.jpg";
 import { Link } from "react-router-dom";
 

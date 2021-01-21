@@ -1,9 +1,9 @@
 import React from "react";
 import MiniContact from "./MiniContact";
 
-function Services() {
+function Services({ offSet }) {
   return (
-    <div className="ServicesTeam Main">
+    <div className="ServicesTeam Main" style={{ marginTop: offSet }}>
       <div className="STBlock">
         <div className="ST1">
           <h3>Services</h3>
