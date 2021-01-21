@@ -22,7 +22,7 @@ function HeaderMobile() {
   const [state, setState] = React.useState({
     top: false,
   });
- const [offset, setOffset] = useState()
+  const [offset, setOffset] = useState();
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -56,24 +56,28 @@ function HeaderMobile() {
     </div>
   );
 
-  useEffect(()=>{
-    const bHeight = document.getElementById('button').offsetHeight;
-    const hHeight = document.getElementById('Header').offsetHeight;
-    let offset = bHeight - hHeight
-    setOffset(offset)
-  }, [])
+  useEffect(() => {
+    const bHeight = document.getElementById("button").offsetHeight;
+    const hHeight = document.getElementById("Header").offsetHeight;
+    let offset = bHeight - hHeight;
+    setOffset(offset);
+  }, []);
 
   return (
-    <div className="Header" id="Header" style={{top: offset}}>
-      <Link to="/" style={{ color: "#FFF", textDecoration: 'none' }}>
+    <div className="Header" id="Header" style={{ top: offset }}>
+      <Link to="/" style={{ color: "#FFF", textDecoration: "none" }}>
         <u>
-          <h2>Jack L. Townsend, Sr.</h2> 
+          <h2>Jack L. Townsend, Sr.</h2>
         </u>
         <h3>Mediation - Arbitration - Consulting Services</h3>
       </Link>
       {["top"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} color="inherit" id="button">
+          <Button
+            onClick={toggleDrawer(anchor, true)}
+            color="inherit"
+            id="button"
+          >
             Menu
           </Button>
           <Drawer

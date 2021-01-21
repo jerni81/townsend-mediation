@@ -128,6 +128,12 @@ body {
   margin-left: 10px;
 }
 
+/* Calendar CSS */
+
+#calendarTop {
+  margin: 20px;
+}
+
 /* Contact CSS */
 
 .Contact {
@@ -185,6 +191,11 @@ body {
     padding-bottom: 12px;
   }
 
+  .ServicesTeam {
+    background-position: top;
+    background-attachment: fixed;
+  }
+
   .STBlock {
     padding-bottom: 20px;
   }
@@ -210,7 +221,6 @@ body {
 /* Small screens */
 
 @media only screen and (max-width: 771px) {
-
   .Header {
     position: sticky;
   }
@@ -241,7 +251,7 @@ body {
   }
 
   .ServicesTeam {
-   background-image: unset;
+    background-image: unset;
   }
 
   .STBlock {

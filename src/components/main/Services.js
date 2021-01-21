@@ -37,7 +37,7 @@ function Services() {
         </div>
         <div className="ST2">
           <h3>Contact</h3>
-          <hr/>
+          <hr />
           <MiniContact />
         </div>
       </div>

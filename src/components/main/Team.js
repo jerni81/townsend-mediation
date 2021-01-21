@@ -49,7 +49,7 @@ function Team() {
             <li>JESUIT HIGH SCHOOL SUPPORTER AND VOLUNTEER</li>
             <li>FIFTH GENERATION FLORIDIAN</li>
           </ul>
-            <br clear="left" />
+          <br clear="left" />
           <h3>Helen Townsend</h3>
           <p></p>
           <ul>
@@ -70,7 +70,7 @@ function Team() {
             </li>
             <li>University of Florida, BS, Journalism </li>
           </ul>
-            <br clear="left" />
+          <br clear="left" />
 
           <h3>Julie Riggs</h3>
           <p></p>
@@ -86,7 +86,7 @@ function Team() {
         </div>
         <div className="ST2">
           <h3>Contact</h3>
-          <hr/>
+          <hr />
           <MiniContact />
         </div>
       </div>
