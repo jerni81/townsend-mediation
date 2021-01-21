@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function HeaderDesk() {
+export default function HeaderDesk({ setHHeight }) {
   const classes = useStyles();
   const [value, setValue] = React.useState();
 
@@ -56,8 +56,15 @@ export default function HeaderDesk() {
     setValue(newValue);
   };
 
+  useEffect(() => {
+    const height = document.getElementById("test").clientHeight;
+    // const hHeight = document.getElementById("Header").offsetHeight;
+    // let offset = bHeight - hHeight;
+    setHHeight(height);
+  }, []);
+
   return (
-    <div className={classes.root} className="Header">
+    <div className={classes.root} className="Header" id="test">
       <Link
         to="/"
         style={{ color: "#FFF", textDecoration: "none" }}
@@ -103,9 +110,9 @@ export default function HeaderDesk() {
           />
 
           <Tab
-            label="Calender"
+            label="Calendar"
             {...a11yProps(2)}
-            to="/Calender"
+            to="/Calendar"
             component={Link}
             style={{
               color: "#FFF",

@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-function HeaderMobile() {
+function HeaderMobile({ setHHeight }) {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -45,7 +45,7 @@ function HeaderMobile() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Services", "Team", "Calender", "Contact"].map((text, index) => (
+        {["Services", "Team", "Calendar", "Contact"].map((text, index) => (
           <ListItem button key={text}>
             <Link to={`/${text}`}>
               <ListItemText primary={text} />
@@ -61,6 +61,7 @@ function HeaderMobile() {
     const hHeight = document.getElementById("Header").offsetHeight;
     let offset = bHeight - hHeight;
     setOffset(offset);
+    setHHeight(hHeight);
   }, []);
 
   return (

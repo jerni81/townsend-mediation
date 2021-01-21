@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import JackHeadshot from "../main/images/jack-headshot.jpg";
 import { Link } from "react-router-dom";
 
-function Home() {
+function Home({ hHeight }) {
   return (
-    <div className="Home Main">
+    <div className="Home Main" style={{ marginTop: hHeight }}>
       <div className="Bio">
         <h3>
           Jack L. Townsend, Sr. has been providing outstanding services for
