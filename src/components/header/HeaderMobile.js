@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
 });
 
-function HeaderMobile({ setHHeight }) {
+function HeaderMobile() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -61,7 +61,6 @@ function HeaderMobile({ setHHeight }) {
     const hHeight = document.getElementById("Header").offsetHeight;
     let offset = bHeight - hHeight;
     setOffset(offset);
-    setHHeight(hHeight);
   }, []);
 
   return (

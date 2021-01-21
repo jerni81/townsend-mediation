@@ -185,7 +185,7 @@ body {
 
   .Header {
     height: fit-content;
-    position: relative;
+    position: absolute;
   }
 
   .Main {
