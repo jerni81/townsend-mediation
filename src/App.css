@@ -23,7 +23,7 @@ body {
   align-items: center;
   position: fixed;
   top: 0;
-  height: 19vh;
+  height: fit-content;
   width: 100%;
   background-image: url("bg-images/carbon-background.jpg");
   color: white;
@@ -81,7 +81,9 @@ body {
 }
 
 .Bio2 img {
-  width: 175px;
+  max-width: 175px;
+  max-height: 250px;
+  width: auto;
   height: auto;
   margin: 15px;
   margin-right: 20px;
@@ -141,7 +143,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 
 /* Footer CSS */
@@ -174,12 +175,9 @@ body {
   }
 
   .Bio {
+    text-align: center;
     height: fit-content;
     margin-bottom: 10px;
-  }
-
-  .Bio h3 {
-    margin-top: 5px;
   }
 
   .Bio2 {
@@ -212,6 +210,11 @@ body {
 /* Small screens */
 
 @media only screen and (max-width: 771px) {
+
+  .Header {
+    position: sticky;
+  }
+
   .Home {
     align-items: center;
   }

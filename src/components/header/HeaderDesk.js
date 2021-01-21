@@ -64,7 +64,7 @@ export default function HeaderDesk() {
         </u>
         <span>Mediation - Arbitration - Consulting Services</span>
       </Link>
-      <AppBar position="static" color="transparent">
+      <AppBar position="sticky" color="transparent">
         <Tabs
           value={value}
           onChange={handleChange}
