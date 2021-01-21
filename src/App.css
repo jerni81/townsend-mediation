@@ -59,8 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: auto;
-  height: 75vh;
-  /* margin-top: 20vh; */
+  height: 71vh;
 }
 
 /* Home page CSS */
@@ -169,11 +168,15 @@ body {
 .Footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-image: url("bg-images/carbon-background.jpg");
   color: white;
-  height: 5vh;
-  position: static;
+  height: fit-content;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 7px;
+  font-family: Lato, sans-serif;
 }
 
 /* Medium size Screens */
@@ -291,5 +294,7 @@ body {
 
   .Footer {
     position: relative;
+    flex-direction: column;
+    line-height: 1.4em;
   }
 }
