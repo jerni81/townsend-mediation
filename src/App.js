@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import HeaderMobile from "./components/header/HeaderMobile";
 import HeaderDesk from "./components/header/HeaderDesk";
@@ -9,56 +9,76 @@ import Services from "./components/main/Services";
 import Team from "./components/main/Team";
 import Calendar from "./components/main/Calendar";
 import Contact from "./components/main/Contact";
-import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 function App() {
-  const theme = useTheme();
   const matches = useMediaQuery("(min-width: 771px)");
 
   const [hHeight, setHHeight] = useState();
+  const [fHeight, setFHeight] = useState();
 
-  useEffect(() => {
-    const bHeight = document.getElementById("test");
-    // const hHeight = document.getElementById("Header").offsetHeight;
-    // let offset = bHeight - hHeight;
-    // setOffset(offset);
-  }, []);
+  const combinedHeight = hHeight + fHeight;
 
   return (
     <div className="App">
-      {matches ? (
-        <HeaderDesk setHHeight={setHHeight} />
-      ) : (
-        <HeaderMobile setHHeight={setHHeight} />
-      )}
+      {matches ? <HeaderDesk setHHeight={setHHeight} /> : <HeaderMobile />}
       <Switch>
         <Route
           path="/Services"
-          render={(props) => <Services {...props} hHeight={hHeight} />}
+          render={(props) => (
+            <Services
+              {...props}
+              hHeight={hHeight}
+              combinedHeight={combinedHeight}
+            />
+          )}
         />
 
         <Route
           path="/Team"
-          render={(props) => <Team {...props} hHeight={hHeight} />}
+          render={(props) => (
+            <Team
+              {...props}
+              hHeight={hHeight}
+              combinedHeight={combinedHeight}
+            />
+          )}
         />
 
         <Route
           path="/Calendar"
-          render={(props) => <Calendar {...props} hHeight={hHeight} />}
+          render={(props) => (
+            <Calendar
+              {...props}
+              hHeight={hHeight}
+              combinedHeight={combinedHeight}
+            />
+          )}
         />
 
         <Route
           path="/Contact"
-          render={(props) => <Contact {...props} hHeight={hHeight} />}
+          render={(props) => (
+            <Contact
+              {...props}
+              hHeight={hHeight}
+              combinedHeight={combinedHeight}
+            />
+          )}
         />
 
         <Route
           path="/"
-          render={(props) => <Home {...props} hHeight={hHeight} />}
+          render={(props) => (
+            <Home
+              {...props}
+              hHeight={hHeight}
+              combinedHeight={combinedHeight}
+            />
+          )}
         />
       </Switch>
-      <Footer />
+      <Footer setFHeight={setFHeight} />
     </div>
   );
 }

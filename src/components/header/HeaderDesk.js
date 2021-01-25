@@ -57,14 +57,14 @@ export default function HeaderDesk({ setHHeight }) {
   };
 
   useEffect(() => {
-    const height = document.getElementById("test").clientHeight;
+    const height = document.getElementById("header").clientHeight;
     // const hHeight = document.getElementById("Header").offsetHeight;
     // let offset = bHeight - hHeight;
     setHHeight(height);
   }, []);
 
   return (
-    <div className={classes.root} className="Header" id="test">
+    <div className={classes.root} className="Header" id="header">
       <Link
         to="/"
         style={{ color: "#FFF", textDecoration: "none" }}

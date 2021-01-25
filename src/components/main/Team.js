@@ -2,9 +2,15 @@ import React from "react";
 import JackHeadshot from "../main/images/jack-headshot.jpg";
 import MiniContact from "./MiniContact";
 
-function Team({ hHeight }) {
+function Team({ hHeight, combinedHeight }) {
   return (
-    <div className="ServicesTeam Main" style={{ marginTop: hHeight }}>
+    <div
+      className="ServicesTeam Main"
+      style={{
+        marginTop: hHeight,
+        height: `calc(100vh - ${combinedHeight}px)`,
+      }}
+    >
       <div className="STBlock">
         <div className="ST1">
           <h3>Our Team</h3>

@@ -1,9 +1,15 @@
 import React from "react";
 import MiniContact from "./MiniContact";
 
-function Services({ hHeight }) {
+function Services({ hHeight, combinedHeight }) {
   return (
-    <div className="ServicesTeam Main" style={{ marginTop: hHeight }}>
+    <div
+      className="ServicesTeam Main"
+      style={{
+        marginTop: hHeight,
+        height: `calc(100vh - ${combinedHeight}px)`,
+      }}
+    >
       <div className="STBlock">
         <div className="ST1">
           <h3>Services</h3>

@@ -1,8 +1,14 @@
 import React from "react";
 
-function Calendar({ hHeight }) {
+function Calendar({ hHeight, combinedHeight }) {
   return (
-    <div className="Calendar Main" style={{ marginTop: hHeight }}>
+    <div
+      className="Calendar Main"
+      style={{
+        marginTop: hHeight,
+        height: `calc(100vh - ${combinedHeight}px)`,
+      }}
+    >
       <div id="calendarTop">
         <b>
           To reserve an appointment online, please click your preferred

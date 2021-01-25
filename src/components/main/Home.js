@@ -2,9 +2,15 @@ import React, { useEffect, useState } from "react";
 import JackHeadshot from "../main/images/jack-headshot.jpg";
 import { Link } from "react-router-dom";
 
-function Home({ hHeight }) {
+function Home({ hHeight, combinedHeight }) {
   return (
-    <div className="Home Main" style={{ marginTop: hHeight }}>
+    <div
+      className="Home Main"
+      style={{
+        marginTop: hHeight,
+        height: `calc(100vh - ${combinedHeight}px)`,
+      }}
+    >
       <div className="Bio">
         <h3>
           Jack L. Townsend, Sr. has been providing outstanding services for

@@ -1,8 +1,15 @@
+import React, { useEffect } from "react";
 import "../App.css";
 
-function Footer() {
+function Footer({ setFHeight }) {
+  useEffect(() => {
+    const height = document.getElementById("footer").clientHeight;
+    // const hHeight = document.getElementById("Header").offsetHeight;
+    // let offset = bHeight - hHeight;
+    setFHeight(height);
+  }, []);
   return (
-    <div className="Footer">
+    <div className="Footer" id="footer">
       <div>
         <a
           href="http://jacktownsend.com/"
