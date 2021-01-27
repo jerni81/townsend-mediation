@@ -33,7 +33,7 @@ function Home({ hHeight, combinedHeight }) {
             How can we help you?
             <br />
             <br />
-            <Link to="/Calender">See Online Mediation Calendar</Link>
+            <Link to="/Calendar">See Online Mediation Calendar</Link>
             <br />
             Find available dates online
           </span>

@@ -86,6 +86,17 @@ export default function HeaderDesk({ setHHeight }) {
           centered
         >
           <Tab
+            label="Home"
+            {...a11yProps(1)}
+            to="/"
+            component={Link}
+            style={{
+              color: "#FFF",
+              fontFamily: "Lato , sans-serif",
+              fontWeight: "bold",
+            }}
+          />
+          <Tab
             label="Services"
             {...a11yProps(0)}
             to="/Services"

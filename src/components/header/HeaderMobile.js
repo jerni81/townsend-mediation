@@ -45,13 +45,15 @@ function HeaderMobile() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Services", "Team", "Calendar", "Contact"].map((text, index) => (
-          <ListItem button key={text}>
-            <Link to={`/${text}`}>
-              <ListItemText primary={text} />
-            </Link>
-          </ListItem>
-        ))}
+        {["Home", "Services", "Team", "Calendar", "Contact"].map(
+          (text, index) => (
+            <ListItem button key={text}>
+              <Link to={`/${text}`}>
+                <ListItemText primary={text} />
+              </Link>
+            </ListItem>
+          )
+        )}
       </List>
     </div>
   );

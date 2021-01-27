@@ -10,40 +10,40 @@ function Footer({ setFHeight }) {
   }, []);
   return (
     <div className="Footer" id="footer">
-      <div>
+      <div id="footer1">
         <a
           href="http://jacktownsend.com/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#FFF", textDecoration: "none" }}
+          style={{ color: "#FFF" }}
         >
           JackTownsend.com
         </a>
-        <br />
+
         <a
           href="https://www.nadn.org/jack-townsend"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#FFF", textDecoration: "none" }}
+          style={{ color: "#FFF" }}
         >
           NADN.org/Jack-Townsend
         </a>
-      </div>
-      <div>
         <a
-          href="https://www.floridabar.org/about/section/profile/?num=398624"
+          href="https://www.floridabar.org/mybarprofile/398624"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#FFF", textDecoration: "none" }}
+          style={{ color: "#FFF" }}
         >
           FloridaBar.org
         </a>
-        <br />
+      </div>
+      <div id="footer2">
+        Site by:{" "}
         <a
           href="http://ajjernigan.com/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "#FFF", textDecoration: "none" }}
+          style={{ color: "#FFF" }}
         >
           Jernigan Development
         </a>

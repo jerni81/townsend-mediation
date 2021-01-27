@@ -18,6 +18,7 @@ function Contact({ hHeight, combinedHeight }) {
           <h3>The Offices of Jack L. Townsend, Sr.</h3>
           <MiniContact />
         </div>
+        <br />
         <img
           src={Office}
           alt="Our Offices"
